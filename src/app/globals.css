@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm, human-feel color palette */
+  --color-cream: #F7F4EE;
+  --color-cream-dark: #EDE8DF;
+  --color-warm-white: #FEFDF9;
+  --color-terracotta: #C4714A;
+  --color-terracotta-light: #E8956E;
+  --color-terracotta-dark: #9E5636;
+  --color-brown: #7C5E3C;
+  --color-brown-dark: #5C4229;
+  --color-warm-text: #2C1810;
+  --color-warm-muted: #8B7355;
+  --color-sage: #6B8F5E;
+  --color-sage-light: #8FB882;
+  --color-border: #E2D9CE;
+
+  /* Typography */
+  --font-display: var(--font-lora);
+  --font-body: var(--font-inter);
+}
+
+body {
+  background-color: #F7F4EE;
+  color: #2C1810;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-lora), Georgia, "Times New Roman", serif;
+}
+
+/* ── Leaflet popup overrides ── */
+.leaflet-popup-content-wrapper {
+  background: #FEFDF9;
+  border: 1px solid #E2D9CE;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 16px rgba(44, 24, 16, 0.12);
+  padding: 0;
+}
+.leaflet-popup-content {
+  margin: 12px 14px;
+}
+.leaflet-popup-tip {
+  background: #FEFDF9;
+}
+.leaflet-popup-close-button {
+  color: #8B7355 !important;
+  font-size: 18px !important;
+  top: 6px !important;
+  right: 8px !important;
+}
+.leaflet-popup-close-button:hover {
+  color: #C4714A !important;
+}
+
+/* Custom scrollbar for a polished feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EDE8DF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4714A;
+  border-radius: 3px;
+}
